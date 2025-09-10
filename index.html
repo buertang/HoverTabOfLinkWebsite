@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HoverTabOfLink - 链接预览悬浮窗工具</title>
-    <meta name="description" content="HoverTabOfLink是一款现代化的浏览器链接预览工具，支持Chrome/Edge/Firefox，提供流畅、高效、可高度自定义的悬浮窗口预览体验，帮助用户在不离开当前页面的情况下快速获取链接信息。">
+    <meta name="description"
+        content="HoverTabOfLink是一款现代化的浏览器链接预览工具，支持Chrome/Edge/Firefox，提供流畅、高效、可高度自定义的悬浮窗口预览体验，帮助用户在不离开当前页面的情况下快速获取链接信息。">
     <meta name="keywords" content="浏览器扩展,链接预览,悬浮窗,Chrome扩展,Firefox扩展,链接预览工具">
     <link rel="icon" href="./public/icon/32.png" type="image/png">
     <style>
@@ -150,7 +152,7 @@
 
         .btn-install {
             background: #f8f9fa;
-            color:black;
+            color: black;
             border: 2px solid rgba(20, 22, 22, 0.3);
         }
 
@@ -386,6 +388,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -452,6 +455,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- 头部导航 -->
     <header class="header">
@@ -531,39 +535,18 @@
             <!-- 安装使用 -->
             <section id="install" class="content-section">
                 <h2 class="section-title">🛠️ 安装使用</h2>
-                
+
                 <h3 style="text-align: center; margin-bottom: 2rem; color: #3498DB;">Chrome/Edge 安装步骤</h3>
                 <div class="install-steps">
                     <div class="step">
                         <div class="step-number">1</div>
                         <div class="step-content">
                             <h3>下载扩展</h3>
-                            <p>从下方下载区域获取最新版本的 HoverTabOfLink 扩展文件。</p>
+                            <p>从 Chrome 应用商店搜索并安装 HoverTabOfLink 扩展。</p>
                         </div>
                     </div>
                     <div class="step">
                         <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>打开扩展管理页面</h3>
-                            <p>在浏览器地址栏输入 <code>chrome://extensions/</code> 并按回车键。</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>启用开发者模式</h3>
-                            <p>在扩展管理页面的右上角，打开"开发者模式"开关。</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <h3>加载扩展</h3>
-                            <p>点击"加载已解压的扩展程序"按钮，选择包含扩展文件的文件夹。</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">5</div>
                         <div class="step-content">
                             <h3>开始使用</h3>
                             <p>安装完成后，在任意网页上尝试拖动链接或悬停，即可看到悬浮预览窗口。</p>
@@ -571,88 +554,16 @@
                     </div>
                 </div>
 
-                <!-- 权限说明 -->
-                <!-- <div class="permissions">
-                    <h3>🔐 权限说明</h3>
-                    <p style="margin-bottom: 1rem;">本扩展需要以下权限来提供完整功能：</p>
-                    <ul>
-                        <li><strong>activeTab</strong>: 获取当前活动标签页信息，用于识别链接和显示预览</li>
-                        <li><strong>storage</strong>: 保存用户设置和偏好，如悬浮窗大小、透明度等</li>
-                        <li><strong>&lt;all_urls&gt;</strong>: 允许在所有网站上显示悬浮预览窗口</li>
-                    </ul>
-                </div> -->
 
                 <!-- 隐私承诺 -->
                 <div class="privacy-promise">
                     <h3>🔒 隐私承诺</h3>
-                    <p>HoverTabOfLink 承诺保护用户隐私安全。所有数据完全在本地处理，不会上传到任何服务器。我们不会收集、存储或传输您的任何个人信息，包括浏览历史、点击行为等。扩展的所有功能均在浏览器本地完成，确保您的隐私安全。</p>
+                    <p>HoverTabOfLink
+                        承诺保护用户隐私安全。所有数据完全在本地处理，不会上传到任何服务器。我们不会收集、存储或传输您的任何个人信息，包括浏览历史、点击行为等。扩展的所有功能均在浏览器本地完成，确保您的隐私安全。
+                    </p>
                 </div>
             </section>
 
-            <!-- 技术栈 -->
-            <!-- <section id="tech" class="content-section">
-                <h2 class="section-title">🏗️ 技术栈</h2>
-                <div class="tech-stack">
-                    <div class="tech-category">
-                        <h3>核心框架</h3>
-                        <div class="tech-items">
-                            <div class="tech-item">
-                                <div class="tech-icon">⚙️</div>
-                                <div class="tech-name">WXT</div>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-icon">⚛️</div>
-                                <div class="tech-name">React</div>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-icon">📝</div>
-                                <div class="tech-name">TypeScript</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tech-category">
-                        <h3>样式与UI</h3>
-                        <div class="tech-items">
-                            <div class="tech-item">
-                                <div class="tech-icon">🎨</div>
-                                <div class="tech-name">Tailwind CSS</div>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-icon">🧩</div>
-                                <div class="tech-name">Headless UI</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tech-category">
-                        <h3>开发工具</h3>
-                        <div class="tech-items">
-                            <div class="tech-item">
-                                <div class="tech-icon">📦</div>
-                                <div class="tech-name">pnpm</div>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-icon">🔧</div>
-                                <div class="tech-name">ESLint</div>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-icon">🧪</div>
-                                <div class="tech-name">Vitest</div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- <h3 style="text-align: center; margin: 3rem 0 2rem; color: #667eea;">📋 环境要求</h3>
-                <div style="background: #f8f9fa; padding: 2rem; border-radius: 12px; text-align: center;">
-                    <p><strong>Node.js:</strong> 18+ (推荐 23.8.0+)</p>
-                    <p><strong>包管理器:</strong> pnpm 8+ 或 npm</p>
-                    <p><strong>浏览器支持:</strong></p>
-                    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
-                        <li>• Chrome 88+</li>
-                        <li>• Microsoft Edge 88+</li>
-                        <li>• Firefox 109+</li>
-                    </ul>
-                </div> -->
             </section>
 
             <!-- 下载区域 -->
@@ -663,7 +574,8 @@
                         获取最新版本的 HoverTabOfLink，体验高效的链接预览功能。目前提供开发版本，支持 Chrome、Edge 等主流基于 Chromium 的浏览器。
                     </p>
                     <div class="btn-group">
-                        <a href="https://chrome.google.com/webstore/search/HoverTabOfLink" class="btn btn-primary btn-install" target="_blank">
+                        <a href="https://chrome.google.com/webstore/search/HoverTabOfLink"
+                            class="btn btn-primary btn-install" target="_blank">
                             🌐 Chrome 应用商店
                         </a>
                     </div>
@@ -675,10 +587,9 @@
     <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 HoverTabOfLink. | <a href="https://www.termsfeed.com/live/31c973c6-0558-4dca-a3c0-0cb6e5369d1a" target="_blank" style="color: inherit; text-decoration: none; opacity: 0.8;">隐私政策</a></p>
-            <!-- <p style="margin-top: 1rem; opacity: 0.8;">
-                如果这个项目对您有帮助，请给个 ⭐ Star 支持一下！
-            </p> -->
+            <p>&copy; 2025 HoverTabOfLink. | <a
+                    href="https://www.termsfeed.com/live/31c973c6-0558-4dca-a3c0-0cb6e5369d1a" target="_blank"
+                    style="color: inherit; text-decoration: none; opacity: 0.8;">隐私政策</a></p>
         </div>
     </footer>
 
@@ -698,11 +609,11 @@
         });
 
         // 滚动时头部样式变化
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const header = document.querySelector('.header');
             const logo = document.querySelector('.logo');
             const navLinks = document.querySelectorAll('.nav-links a');
-            
+
             if (window.scrollY > 100) {
                 header.style.background = 'rgba(255, 255, 255, 0.95)';
                 header.style.color = '#333';
@@ -726,7 +637,7 @@
             rootMargin: '0px 0px -50px 0px'
         };
 
-        const observer = new IntersectionObserver(function(entries) {
+        const observer = new IntersectionObserver(function (entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.style.animation = 'fadeInUp 0.8s ease forwards';
@@ -740,4 +651,5 @@
         });
     </script>
 </body>
+
 </html>
